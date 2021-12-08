@@ -1,12 +1,13 @@
 Client name : suvhradip@gmail.com
 Client email : suvhradip@gmail.com
-Client address : SHYAMPUR BUDGE BUDGE SOUTH 24PGS, BBT ROAD, NEAR CENTRAL BANK OF INDIA
-Client GST No : 5455789
+Client address : San Andress1 Block 21/B
+Client GST No : 1254845
 Biller name : Sam
 Biller email : suvhradip@gmail.com
-Biller address : SHYAMPUR BUDGE BUDGE SOUTH 24PGS, BBT ROAD, NEAR CENTRAL BANK OF INDIA
+Biller address : Kolkata 700131
 Biller GST : 145454
-Cost Service : 1095 /-
+List of Service Provided : Food, Electric, AC
+Cost Service : 100 /-
 Tax Rate : 5%
-Total Amount : 1149 /-
-Bank Details : 1234568477885
+Total Amount : 105 /-
+Bank Details : 1234455847788996

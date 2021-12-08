@@ -20,12 +20,13 @@ def get_Bill(request):
             biller_email = request.POST['biller_email']
             biller_address = request.POST['biller_address']
             biller_gst = request.POST['biller_gst']
+            list_of_service = request.POST['list_of_service']
             cost_service = request.POST['cost_service']
             tax_rate = request.POST['tax_rate']
             bank_accounts = request.POST['bank_accounts']
             tax_cost = (int(cost_service) * int(tax_rate))/100
             total_amount = int(cost_service) + int(tax_cost)
-            post_query = BillDetails(client_name = client_name, client_email=client_email,client_address=client_address,client_gst=client_gst,biller_name=biller_name,biller_email=biller_email,biller_address=biller_address,biller_gst=biller_gst,cost_service=cost_service,tax_rate=tax_rate,bank_accounts=bank_accounts,total_amount=total_amount)
+            post_query = BillDetails(client_name = client_name, client_email=client_email,client_address=client_address,client_gst=client_gst,biller_name=biller_name,biller_email=biller_email,biller_address=biller_address,biller_gst=biller_gst,list_of_service=list_of_service,cost_service=cost_service,tax_rate=tax_rate,bank_accounts=bank_accounts,total_amount=total_amount)
             # storing customer details into database
             post_query.save()
 
@@ -39,6 +40,7 @@ def get_Bill(request):
                 'Biller email': biller_email,
                 'Biller address': biller_address,
                 'Biller GST': biller_gst,
+                'List of Service Provided': list_of_service,
                 'Cost Service':str(cost_service)+' /-',
                 'Tax Rate': str(tax_rate)+'%',
                 'Total Amount':str(total_amount)+' /-',

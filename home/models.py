@@ -11,6 +11,7 @@ class BillDetails(models.Model):
     biller_email = models.EmailField(max_length=254)
     biller_address = models.TextField()
     biller_gst = models.IntegerField(max_length=15)
+    list_of_service = models.TextField()
     cost_service = models.IntegerField(max_length=1000)
     tax_rate = models.IntegerField()
     bank_accounts = models.TextField()
